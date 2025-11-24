@@ -7,7 +7,7 @@ export default function RootLayout() {
       <Stack.Screen
         name="index"
         options={{
-          headerTitle: "Welcome to AquaSense",
+          headerTitle: "Welcome to the App",
           headerTitleAlign: "center",
         }}
       />
