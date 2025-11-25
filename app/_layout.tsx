@@ -1,23 +1,25 @@
 import { Stack } from "expo-router";
+import { StatusBar } from "react-native";
 import "../global.css";
 
 export default function RootLayout() {
   return (
-    <Stack>
-      <Stack.Screen
-        name="index"
-        options={{
-          headerTitle: "Welcome to the App tabs",
-          headerTitleAlign: "center",
-        }}
-      />
-      <Stack.Screen
-        name="(tabs)/home"
-        options={{
-          headerTitle: "Home",
-          headerTitleAlign: "center",
-        }}
-      />
-    </Stack>
+    <>
+      <StatusBar barStyle="dark-content" />
+      <Stack>
+        <Stack.Screen
+          name="index"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="(tabs)"
+          options={{
+            headerShown: false,
+          }}
+        />
+      </Stack>
+    </>
   );
 }
