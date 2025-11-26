@@ -46,6 +46,17 @@ export default function RootLayout() {
             },
           }}
         />
+        <Stack.Screen
+          name="(auth)/login"
+          options={{
+            headerTitle: "User Login",
+            headerTitleAlign: "center",
+            headerShadowVisible: false,
+            headerStyle: {
+              backgroundColor: "#f9f9f9",
+            },
+          }}
+        />
       </Stack>
     </>
   );
