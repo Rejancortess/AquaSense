@@ -63,6 +63,9 @@ const TabLayout = () => {
       <Tabs.Screen
         name="history"
         options={{
+          headerShadowVisible: false,
+          headerStyle: {
+            backgroundColor: "#f5f8f8",},
           headerTitle: "Calibration History",
           headerTitleAlign: "center",
           headerLeft: () => (
