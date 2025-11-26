@@ -1,49 +1,27 @@
-import { useOnboarding } from "@/store/useOnboarding";
 import { Stack } from "expo-router";
 import React from "react";
 import { StatusBar } from "react-native";
 import "../global.css";
 
 export default function RootLayout() {
-  const { loading, hasSeenOnboarding } = useOnboarding();
-  const loadOnboarding = useOnboarding(state => state.loadOnboardingStatus);
-
-  React.useEffect(() => {
-    loadOnboarding();
-  }, []);
-
-  if (loading) {
-    return null;
-  }
-
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <Stack>
-        {hasSeenOnboarding ? (
-          <Stack.Screen
-            name="(tabs)/home"
-            options={{
-              headerShown: false,
-            }}
-          />
-        ) : (
-          <Stack.Screen
-            name="index"
-            options={{
-              headerShown: false,
-            }}
-          />
-        )}
+      <Stack
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
+        <Stack.Screen name="index" />
+        <Stack.Screen name="(tabs)/home" />
         <Stack.Screen
           name="settings"
           options={{
+            headerShown: true,
             headerTitle: "Settings",
             headerTitleAlign: "center",
             headerShadowVisible: false,
-            headerStyle: {
-              backgroundColor: "#f9f9f9",
-            },
+            headerStyle: { backgroundColor: "#f9f9f9" },
           }}
         />
       </Stack>
