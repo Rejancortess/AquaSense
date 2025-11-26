@@ -1,7 +1,6 @@
 import { useOnboarding } from "@/store/useOnboarding";
 import { Stack } from "expo-router";
 import React from "react";
-import { StatusBar } from "react-native";
 import "../global.css";
 
 export default function RootLayout() {
@@ -17,36 +16,21 @@ export default function RootLayout() {
   }
 
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <Stack>
-        {hasSeenOnboarding ? (
-          <Stack.Screen
-            name="(tabs)"
-            options={{
-              headerShown: false,
-            }}
-          />
-        ) : (
-          <Stack.Screen
-            name="index"
-            options={{
-              headerShown: false,
-            }}
-          />
-        )}
-        <Stack.Screen
-          name="settings"
-          options={{
-            headerTitle: "Settings",
-            headerTitleAlign: "center",
-            headerShadowVisible: false,
-            headerStyle: {
-              backgroundColor: "#f9f9f9",
-            },
-          }}
-        />
-      </Stack>
-    </>
+    <Stack>
+      <Stack.Screen
+        name="index"
+        options={{
+          headerTitle: "Welcome to the App tabs",
+          headerTitleAlign: "center",
+        }}
+      />
+      <Stack.Screen
+        name="(tabs)/home"
+        options={{
+          headerTitle: "Home",
+          headerTitleAlign: "center",
+        }}
+      />
+    </Stack>
   );
 }
