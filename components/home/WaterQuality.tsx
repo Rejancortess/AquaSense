@@ -1,10 +1,14 @@
+import { theme } from "@/theme";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import React from "react";
 import { Text, View } from "react-native";
 
 const WaterQuality = () => {
   return (
-    <View className="mt-10 flex-col items-center rounded-2xl bg-white p-6 text-center shadow-lg shadow-black">
+    <View
+      className="mt-10 flex-col items-center rounded-2xl bg-white p-6 text-center "
+      style={theme.shadowlight}
+    >
       <View
         className="my-5 items-center justify-center gap-2"
         style={{

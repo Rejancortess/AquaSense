@@ -22,14 +22,14 @@ export default function RootLayout() {
       <Stack>
         {hasSeenOnboarding ? (
           <Stack.Screen
-            name="/"
+            name="(tabs)"
             options={{
               headerShown: false,
             }}
           />
         ) : (
           <Stack.Screen
-            name="(tabs)"
+            name="index"
             options={{
               headerShown: false,
             }}
