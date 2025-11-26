@@ -6,11 +6,6 @@ import { View } from "react-native";
 
 export default function Index() {
   const router = useRouter();
-  const loadOnboarding = useOnboarding(state => state.loadOnboardingStatus);
-
-  React.useEffect(() => {
-    loadOnboarding();
-  }, []);
 
   const finishOnboarding = useOnboarding(s => s.finishOnboarding);
 

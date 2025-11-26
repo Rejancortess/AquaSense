@@ -1,4 +1,6 @@
 import HomeHeader from "@/components/home/HomeHeader";
+import LastCalibration from "@/components/home/LastCalibration";
+import Readings from "@/components/home/Readings";
 import WaterQuality from "@/components/home/WaterQuality";
 import React from "react";
 import { Text, View } from "react-native";
@@ -11,6 +13,8 @@ const Home = () => {
         <HomeHeader />
         <WaterQuality />
         <Text className="mt-7 text-xl font-semibold">Real-Time Readings</Text>
+        <Readings />
+        <LastCalibration />
       </View>
     </SafeAreaView>
   );
