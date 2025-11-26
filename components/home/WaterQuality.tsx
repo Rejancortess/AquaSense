@@ -10,7 +10,7 @@ const WaterQuality = () => {
       style={theme.shadowlight}
     >
       <View
-        className="my-5 items-center justify-center gap-2"
+        className="my-2 items-center justify-center gap-2"
         style={{
           borderWidth: 13,
           borderColor: "#05afd1",
