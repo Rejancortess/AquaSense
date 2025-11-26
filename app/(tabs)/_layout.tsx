@@ -37,6 +37,10 @@ const TabLayout = () => {
         name="scan"
         options={{
           headerTitle: "AquaSense",
+          headerShadowVisible: false,
+          headerStyle: {
+            backgroundColor: "#f9f9f9",
+          },
           headerTitleStyle: {
             fontWeight: "semibold",
           },

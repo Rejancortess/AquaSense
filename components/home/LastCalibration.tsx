@@ -1,5 +1,5 @@
 import { theme } from "@/theme";
-import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import React from "react";
 import { Text, View } from "react-native";
 
@@ -20,11 +20,11 @@ const LastCalibration = () => {
     >
       <View className="flex-row items-center gap-5">
         <View className="rounded-lg bg-sky-200 p-3">
-          <FontAwesome5 name="water" size={20} color="#05afd1" />
+          <MaterialIcons name="science" size={20} color="#05afd1" />
         </View>
         <View>
-          <Text className="font-semibold ">Turbidity</Text>
-          <Text className="text-gray-500 ">Clarity Level</Text>
+          <Text className="font-semibold ">Last Calibration</Text>
+          <Text className="text-gray-500 ">Sensor Check</Text>
         </View>
       </View>
       <Text className="text-lg font-semibold">{getTodayDate()}</Text>
