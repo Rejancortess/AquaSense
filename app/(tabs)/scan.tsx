@@ -12,8 +12,9 @@ const Scan = () => {
         Point your camera at the QR code on the drinking fountain to get instant
         water quality information.{" "}
       </Text>
-      <View>
-        <MaterialIcons name="qr-code" size={24} color="black" />
+      <View className="bg-primary mt-10 flex-row items-center gap-2 rounded-xl px-7 py-4 shadow-md shadow-black">
+        <MaterialIcons name="qr-code" size={28} color="white" />
+        <Text className="text-xl font-semibold text-white ">Scan QR Code</Text>
       </View>
     </View>
   );
