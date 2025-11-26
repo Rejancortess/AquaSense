@@ -10,6 +10,8 @@ const History = () => {
             </Text>
         <CalibrationHistory isSafe={true} location="CITC Building First Floor" id="F-CITC01-01"/>
         <CalibrationHistory isSafe={false} location="DRER Memorial Hall" id="F-DRER01-01"/>
+        <CalibrationHistory isSafe={true} location="Science Complex" id="F-SCI01-01"/>
+        <CalibrationHistory isSafe={true} location="CEA Building First Floor" id="F-CEA01-01"/>
     </View>
   );
 };
