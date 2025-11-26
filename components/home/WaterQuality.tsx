@@ -19,7 +19,7 @@ const WaterQuality = () => {
         <Text className="text-3xl font-[900]">SAFE</Text>
       </View>
       <Text className="text-md font-medium text-gray-600 ">
-        Water Quality Status
+        Water Quality Statusasagasgasg
       </Text>
     </View>
   );
