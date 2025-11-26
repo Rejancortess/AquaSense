@@ -64,6 +64,10 @@ const TabLayout = () => {
         name="history"
         options={{
           headerTitle: "Calibration History",
+          headerShadowVisible: false,
+          headerStyle: {
+            backgroundColor: "#f9f9f9",
+          },
           headerTitleAlign: "center",
           headerLeft: () => (
             <TouchableOpacity
