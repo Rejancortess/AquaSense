@@ -2,6 +2,7 @@ import HomeHeader from "@/components/home/HomeHeader";
 import LastCalibration from "@/components/home/LastCalibration";
 import Readings from "@/components/home/Readings";
 import WaterQuality from "@/components/home/WaterQuality";
+import { router } from "expo-router";
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -16,6 +17,7 @@ const Home = () => {
         <Readings />
         <LastCalibration />
         <TouchableOpacity
+          onPress={() => router.push("/report")}
           activeOpacity={0.8}
           className="bg-primary mt-10 items-center rounded-xl py-4 shadow-md shadow-black"
         >
