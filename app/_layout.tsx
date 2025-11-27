@@ -24,6 +24,16 @@ export default function RootLayout() {
             headerStyle: { backgroundColor: "#f9f9f9" },
           }}
         />
+        <Stack.Screen
+          name="report"
+          options={{
+            headerShown: true,
+            headerTitle: "Report an Issue",
+            headerTitleAlign: "center",
+            headerShadowVisible: false,
+            headerStyle: { backgroundColor: "#f9f9f9" },
+          }}
+        />
       </Stack>
     </>
   );
