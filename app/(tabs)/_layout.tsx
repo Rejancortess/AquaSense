@@ -37,6 +37,10 @@ const TabLayout = () => {
         name="scan"
         options={{
           headerTitle: "AquaSense",
+          headerShadowVisible: false,
+          headerStyle: {
+            backgroundColor: "#f9f9f9",
+          },
           headerTitleStyle: {
             fontWeight: "semibold",
           },
@@ -60,6 +64,10 @@ const TabLayout = () => {
         name="history"
         options={{
           headerTitle: "Calibration History",
+          headerShadowVisible: false,
+          headerStyle: {
+            backgroundColor: "#f9f9f9",
+          },
           headerTitleAlign: "center",
           headerLeft: () => (
             <TouchableOpacity
