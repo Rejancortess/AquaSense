@@ -1,8 +1,20 @@
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { useCameraPermissions } from "expo-camera";
+import { router } from "expo-router";
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
-
 const Scan = () => {
+  const [permission, requestPermission] = useCameraPermissions();
+  const isPermissionGranted = Boolean(permission?.granted);
+
+  const handleCamera = () => {
+    if (!isPermissionGranted) {
+      requestPermission();
+    } else {
+      router.push("/camera");
+    }
+  };
+
   return (
     <View className="bg-background-light flex-1 items-center justify-center px-7">
       <Text className="mb-4 text-center text-4xl font-bold">
@@ -13,7 +25,9 @@ const Scan = () => {
         water quality information.{" "}
       </Text>
       <TouchableOpacity
+        disabled={!isPermissionGranted}
         activeOpacity={0.8}
+        onPress={handleCamera}
         className="bg-primary mt-10 flex-row items-center gap-2 rounded-xl px-7 py-4 shadow-md shadow-black"
       >
         <MaterialIcons name="qr-code" size={28} color="white" />
