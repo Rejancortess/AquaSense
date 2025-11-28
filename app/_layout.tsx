@@ -25,6 +25,7 @@ export default function RootLayout() {
           }}
         />
         <Stack.Screen
+<<<<<<< HEAD
           name="(auth)/login"
           options={{
             headerTitle: "User Login",
@@ -33,6 +34,15 @@ export default function RootLayout() {
             headerStyle: {
               backgroundColor: "#f9f9f9",
             },
+=======
+          name="report"
+          options={{
+            headerShown: true,
+            headerTitle: "Report an Issue",
+            headerTitleAlign: "center",
+            headerShadowVisible: false,
+            headerStyle: { backgroundColor: "#f9f9f9" },
+>>>>>>> main
           }}
         />
       </Stack>

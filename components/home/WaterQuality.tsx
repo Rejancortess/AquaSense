@@ -22,7 +22,7 @@ const WaterQuality = () => {
         <Ionicons name="water-outline" size={40} color="#05afd1" />
         <Text className="text-3xl font-[900]">SAFE</Text>
       </View>
-      <Text className="text-md font-medium text-gray-600 ">
+      <Text className="text-md mt-5 font-medium text-gray-500 ">
         Water Quality Status
       </Text>
     </View>
