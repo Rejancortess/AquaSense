@@ -1,7 +1,7 @@
-import Ionicons from "@expo/vector-icons/Ionicons";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import React from "react";
-import { Text, View } from "react-native";
+import Ionicons from '@expo/vector-icons/Ionicons'
+import MaterialIcons from '@expo/vector-icons/MaterialIcons'
+import React from 'react'
+import { Text, View } from 'react-native'
 
 const HomeHeader = () => {
   return (
@@ -12,7 +12,7 @@ const HomeHeader = () => {
       </View>
       <MaterialIcons name="wifi" size={24} color="black" />
     </View>
-  );
-};
+  )
+}
 
-export default HomeHeader;
+export default HomeHeader

@@ -1,6 +1,6 @@
 export const theme = {
   shadowDark: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -11,7 +11,7 @@ export const theme = {
     elevation: 4,
   },
   shadowlight: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 1,
@@ -21,4 +21,4 @@ export const theme = {
 
     elevation: 1,
   },
-};
+}

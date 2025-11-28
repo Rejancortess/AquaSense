@@ -1,7 +1,7 @@
-import { theme } from "@/theme";
-import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
-import React from "react";
-import { Text, View } from "react-native";
+import { theme } from '@/theme'
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
+import React from 'react'
+import { Text, View } from 'react-native'
 
 const Readings = () => {
   return (
@@ -23,7 +23,7 @@ const Readings = () => {
         <Text className="text-gray-500">NTU</Text>
       </View>
     </View>
-  );
-};
+  )
+}
 
-export default Readings;
+export default Readings

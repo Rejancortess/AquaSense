@@ -1,15 +1,15 @@
-import Ionicons from "@expo/vector-icons/Ionicons";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import { Tabs, useRouter } from "expo-router";
-import React from "react";
-import { TouchableOpacity } from "react-native";
+import Ionicons from '@expo/vector-icons/Ionicons'
+import MaterialIcons from '@expo/vector-icons/MaterialIcons'
+import { Tabs, useRouter } from 'expo-router'
+import React from 'react'
+import { TouchableOpacity } from 'react-native'
 
 const TabLayout = () => {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "#05afd1",
+        tabBarActiveTintColor: '#05afd1',
         tabBarStyle: {
           paddingBottom: 5,
           height: 90,
@@ -23,10 +23,10 @@ const TabLayout = () => {
         name="home"
         options={{
           headerShown: false,
-          tabBarLabel: "Home",
+          tabBarLabel: 'Home',
           tabBarIcon: ({ color, size, focused }) => (
             <Ionicons
-              name={focused ? "home" : "home-outline"}
+              name={focused ? 'home' : 'home-outline'}
               color={color}
               size={size}
             />
@@ -36,25 +36,25 @@ const TabLayout = () => {
       <Tabs.Screen
         name="scan"
         options={{
-          headerTitle: "AquaSense",
+          headerTitle: 'AquaSense',
           headerShadowVisible: false,
           headerStyle: {
-            backgroundColor: "#f9f9f9",
+            backgroundColor: '#f9f9f9',
           },
           headerTitleStyle: {
-            fontWeight: "semibold",
+            fontWeight: 'semibold',
           },
           headerRight: () => (
             <TouchableOpacity
               activeOpacity={0.8}
-              onPress={() => router.push("/settings")}
+              onPress={() => router.push('/settings')}
               className="mr-5"
             >
               <Ionicons name="settings-outline" size={24} color="black" />
             </TouchableOpacity>
           ),
-          headerTitleAlign: "center",
-          tabBarLabel: "Scan",
+          headerTitleAlign: 'center',
+          tabBarLabel: 'Scan',
           tabBarIcon: ({ color, size }) => (
             <MaterialIcons name="qr-code-scanner" color={color} size={size} />
           ),
@@ -63,12 +63,12 @@ const TabLayout = () => {
       <Tabs.Screen
         name="history"
         options={{
-          headerTitle: "Calibration History",
+          headerTitle: 'Calibration History',
           headerShadowVisible: false,
           headerStyle: {
-            backgroundColor: "#f9f9f9",
+            backgroundColor: '#f9f9f9',
           },
-          headerTitleAlign: "center",
+          headerTitleAlign: 'center',
           headerLeft: () => (
             <TouchableOpacity
               activeOpacity={0.8}
@@ -78,14 +78,14 @@ const TabLayout = () => {
               <Ionicons name="arrow-back-outline" size={24} color="black" />
             </TouchableOpacity>
           ),
-          tabBarLabel: "History",
+          tabBarLabel: 'History',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="time-outline" color={color} size={size} />
           ),
         }}
       />
     </Tabs>
-  );
-};
+  )
+}
 
-export default TabLayout;
+export default TabLayout

@@ -1,16 +1,16 @@
-import { theme } from "@/theme";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import React from "react";
-import { Text, View } from "react-native";
+import { theme } from '@/theme'
+import MaterialIcons from '@expo/vector-icons/MaterialIcons'
+import React from 'react'
+import { Text, View } from 'react-native'
 
 const LastCalibration = () => {
   const getTodayDate = () => {
-    const today = new Date();
-    const year = today.getFullYear();
-    const month = String(today.getMonth() + 1).padStart(2, "0");
-    const day = String(today.getDate()).padStart(2, "0");
-    return `${year}-${month}-${day}`;
-  };
+    const today = new Date()
+    const year = today.getFullYear()
+    const month = String(today.getMonth() + 1).padStart(2, '0')
+    const day = String(today.getDate()).padStart(2, '0')
+    return `${year}-${month}-${day}`
+  }
 
   return (
     <View
@@ -28,7 +28,7 @@ const LastCalibration = () => {
       </View>
       <Text className="text-lg font-semibold">{getTodayDate()}</Text>
     </View>
-  );
-};
+  )
+}
 
-export default LastCalibration;
+export default LastCalibration

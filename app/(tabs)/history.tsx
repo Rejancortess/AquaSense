@@ -1,6 +1,6 @@
-import Recent from "@/components/history/Recent";
-import React from "react";
-import { ScrollView, Text } from "react-native";
+import Recent from '@/components/history/Recent'
+import React from 'react'
+import { ScrollView, Text } from 'react-native'
 
 const History = () => {
   return (
@@ -9,7 +9,7 @@ const History = () => {
       <Recent isSafe={true} location="CITC Building" id="F-CITC01-01" />
       <Recent isSafe={false} location="GYM Lobby" id="F-GYMC01-02" />
     </ScrollView>
-  );
-};
+  )
+}
 
-export default History;
+export default History

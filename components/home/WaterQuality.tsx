@@ -1,7 +1,7 @@
-import { theme } from "@/theme";
-import Ionicons from "@expo/vector-icons/Ionicons";
-import React from "react";
-import { Text, View } from "react-native";
+import { theme } from '@/theme'
+import Ionicons from '@expo/vector-icons/Ionicons'
+import React from 'react'
+import { Text, View } from 'react-native'
 
 const WaterQuality = () => {
   return (
@@ -13,7 +13,7 @@ const WaterQuality = () => {
         className="my-2 items-center justify-center gap-2"
         style={{
           borderWidth: 13,
-          borderColor: "#05afd1",
+          borderColor: '#05afd1',
           borderRadius: 100,
           width: 150,
           height: 150,
@@ -26,7 +26,7 @@ const WaterQuality = () => {
         Water Quality Status
       </Text>
     </View>
-  );
-};
+  )
+}
 
-export default WaterQuality;
+export default WaterQuality
