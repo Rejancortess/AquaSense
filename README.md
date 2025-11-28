@@ -1,4 +1,4 @@
-# PIT AquaSense
+# PIT HCI -  AquaSense
 
 PIT AquaSense is a mobile application designed to monitor water quality on campus. It tracks metrics such as pH, turbidity, and temperature in real-time and provides notifications when water quality is unsafe.
 
@@ -23,6 +23,52 @@ PIT AquaSense is a mobile application designed to monitor water quality on campu
    - View historical data and notifications.  
 
 ---
+
+# AquaSense Project Structure
+
+This document outlines the folder structure of the AquaSense project.
+
+```
+.
+├── app.json                # Expo configuration file
+├── assets                  # Static assets like images and fonts
+│   └── images
+├── babel.config.js         # Babel configuration
+├── backend                 # Backend services
+│   └── firebase.ts         # Firebase configuration
+├── components              # Reusable UI components
+│   ├── history
+│   ├── home
+│   └── ui
+├── declarations.d.ts       # TypeScript declarations
+├── eas.json                # Expo Application Services configuration
+├── .env                    # Environment variables
+├── eslint.config.js        # ESLint configuration
+├── global.css              # Global CSS styles
+├── metro.config.js         # Metro bundler configuration
+├── nativewind-env.d.ts     # NativeWind environment
+├── package.json            # Project dependencies and scripts
+├── package-lock.json       # Exact versions of dependencies
+├── .prettierrc.json        # Prettier configuration
+├── store                   # Zustand stores for state management
+│   ├── authStore.ts
+│   └── useOnboarding.ts
+├── tailwind.config.js      # Tailwind CSS configuration
+├── theme.ts                # Application theme
+├── tsconfig.json           # TypeScript configuration
+├── .vscode                 # VS Code settings
+│   ├── extensions.json
+│   └── settings.json
+└── app                     # Application source code
+    ├── _layout.tsx
+    ├── report.tsx
+    ├── index.tsx
+    ├── camera.tsx
+    ├── settings.tsx
+    ├── (tabs)
+    └── (auth)
+```
+
 
 ## Team Roles
 
