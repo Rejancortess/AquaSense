@@ -1,6 +1,6 @@
 # PIT HCI -  AquaSense
 
-PIT AquaSense is a mobile application designed to monitor water quality on campus. It tracks metrics such as pH, turbidity, and temperature in real-time and provides notifications when water quality is unsafe.
+PIT AquaSense is a mobile application designed to monitor water quality on campus. It tracks metrics such as pH, turbidity  in real-time and provides notifications when water quality is unsafe.
 
 ---
 
